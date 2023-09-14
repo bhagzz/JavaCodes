@@ -1,0 +1,23 @@
+/* PROGRAM NO 2 */ 
+
+import java.util.Scanner;
+class Fibo
+{
+   public static void main(String args[])
+    {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Enter the Limit :");
+      int n = sc.nextInt();
+      int FT=0,ST=1;
+      System.out.println("Fibonacci Series till "+ n +"terms:");
+    
+      for(int i=1;i<=n;i++)
+         {
+           System.out.print(FT + ", ");
+
+           int NT = FT + ST;
+           FT = ST;
+           ST = NT;
+         }
+    }
+}
